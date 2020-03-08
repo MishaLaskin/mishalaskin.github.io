@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Field Theory for Fractional Quantum Hall States"
+date:   2014-03-19 11:10:11 -0800
+categories: physics
+affiliation: University of Chicago
+authors: "T. Can, <b>M. Laskin</b>, P. Wiegmann"
+venue: "arXiv preprint arXiv:1412.8716"
+---

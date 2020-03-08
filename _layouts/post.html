@@ -1,0 +1,46 @@
+---
+layout: post
+---
+<!doctype html>
+<html>
+
+<head>
+    <title>{{ page.title }}</title>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css">
+
+</head>
+
+<body>
+    <table
+        style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:10%">
+        <tr style="padding:0px">
+        <td style="padding:0px">
+            <nav>
+                <a href="/"> <<< Back </a>
+            </nav>
+        <h1> {{page.title}}</h1>
+        <center><p>{{page.authors}}</p></center>
+        <p>
+            <b>TL;DR</b> {{page.excerpt}}
+        </p>
+        <p>
+            <b>Abstract:</b>
+            {{ page.content | remove: page.excerpt }}
+        </p>
+        
+
+        </td>
+        </tr>
+    </table>
+</body>
+
+</html>

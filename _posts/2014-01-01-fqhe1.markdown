@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Fractional quantum Hall effect in a curved space: gravitational anomaly and electromagnetic response"
+date:   2014-05-19 11:10:11 -0800
+categories: physics
+affiliation: University of Chicago
+authors: "T. Can, <b>M. Laskin</b>, P. Wiegmann"
+venue: "Physical review letters 113 (4), 046803"
+---

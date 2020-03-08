@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Discrete Representation Learning for Goal-Conditioned Visual Reinforcement Learning"
+date:   2020-03-06 11:10:11 -0800
+image: /images/discrete_reps.png    
+categories: research
+affiliation: UC Berkeley
+arxiv: https://drive.google.com/file/d/1-Us-ZxQKjdF5_Wbqspef5uxAydxCtYxG/view
+authors: "<b>Michael Laskin</b>, Thanard Kurutach, Pieter Abbeel"
+venue: "NeurIPS 2019 (Deep Reinforcement Learning Workshop)"
+---
+The pixel observation space is huge (for a 64x64 pixel image there are (64^2*3)^255 possible images). Discrete latent encoding dramatically reduces the visual representation space, which allows RL algorithms to solve goals directly from images more efficiently than prior methods.
+
+<!--<div style="text-align:center"><img style="width:100%;max-width:20%" src="/images/cleanup_obs.gif1" /></div>-->
+
+To operate effectively in the real world, artificial agents must act from raw sensory input such as images and achieve diverse goals across long time-horizons. On the one hand, recent strides in deep reinforcement and imitation learning have demonstrated impressive ability to learn goal-conditioned policies from high-dimensional image input, though only for short-horizon tasks. On the other hand, classical graphical methods like A* search are able to solve long-horizon tasks, but assume that the graph structure is abstracted away from raw sensory input and can only be constructed with task-specific priors. We wish to combine the strengths of deep learning and classical planning to solve long-horizon tasks from raw sensory input. To this end, we introduce Sparse Graphical Memory (SGM), a new data structure that stores observations and feasible transitions in a sparse memory. SGM can be combined with goal-conditioned RL or imitative agents to solve long-horizon tasks across a diverse set of domains. We show that SGM significantly outperforms current state of the art methods on long-horizon, sparse-reward visual navigation tasks.

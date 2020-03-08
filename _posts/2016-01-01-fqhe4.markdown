@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Emergent conformal symmetry and geometric transport properties of quantum Hall states on singular surfaces"
+date:   2016-03-19 11:10:11 -0800
+categories: physics
+affiliation: University of Chicago
+authors: "T. Can, Y.H. Chiu, <b>M. Laskin</b>, P. Wiegmann"
+venue: "Physical review letters 117 (26), 266803"
+---

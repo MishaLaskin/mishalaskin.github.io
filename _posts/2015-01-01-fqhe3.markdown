@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Collective field theory for quantum Hall states"
+date:   2015-03-19 11:10:11 -0800
+categories: physics
+affiliation: University of Chicago
+authors: "T. Can, <b>M. Laskin</b>, P. Wiegmann"
+venue: "Physical Review B 92 (23), 235141	"
+---

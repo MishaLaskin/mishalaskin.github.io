@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Population of the giant pairing vibration"
+date:   2016-01-19 11:10:11 -0800
+categories: physics
+affiliation: University of Chicago
+authors: "<b>M. Laskin</b>, R.F. Casten, A.O. Macchiavelli, R.M. Clark, D. Bucurescu"
+venue: "Physical Review C 93 (3), 034321"
+---
