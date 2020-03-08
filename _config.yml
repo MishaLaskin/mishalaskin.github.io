@@ -21,7 +21,7 @@
 title: Michael (misha) Laskin Research
 email: laskin.misha@gmail.com
 description: "Michael (misha) Laskin is a postdoc in the Berkeley Artificial Intellignece Research (BAIR) lab, which is part at UC Berkeley, where he works on deep unsupervised and reinforcement learning with Pieter Abbeel." # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "mishalaskin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mishalaskin
 github_username:  mishalaskin
