@@ -27,7 +27,7 @@ twitter_username: mishalaskin
 github_username:  mishalaskin
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: minima
 plugins:
   - jekyll-feed
 

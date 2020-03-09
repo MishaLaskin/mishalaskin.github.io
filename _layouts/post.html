@@ -29,6 +29,14 @@ layout: post
             </nav>
         <h1> {{page.title}}</h1>
         <center><p>{{page.authors}}</p></center>
+       
+        <center>
+            <p>
+                {% if page.code %}<a target='_blank' href="{{page.code}}">code</a>{% endif %} / 
+                {% if page.arxiv %}<a target='_blank' href="{{page.arxiv}}">arxiv</a>{% endif %}
+            </p>
+        </center>
+        
         <p>
             <b>TL;DR</b> {{page.excerpt}}
         </p>

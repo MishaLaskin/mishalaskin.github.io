@@ -13,4 +13,16 @@ The pixel observation space is huge (for a 64x64 pixel image there are (64^2*3)^
 
 <!--<div style="text-align:center"><img style="width:100%;max-width:20%" src="/images/cleanup_obs.gif1" /></div>-->
 
-To operate effectively in the real world, artificial agents must act from raw sensory input such as images and achieve diverse goals across long time-horizons. On the one hand, recent strides in deep reinforcement and imitation learning have demonstrated impressive ability to learn goal-conditioned policies from high-dimensional image input, though only for short-horizon tasks. On the other hand, classical graphical methods like A* search are able to solve long-horizon tasks, but assume that the graph structure is abstracted away from raw sensory input and can only be constructed with task-specific priors. We wish to combine the strengths of deep learning and classical planning to solve long-horizon tasks from raw sensory input. To this end, we introduce Sparse Graphical Memory (SGM), a new data structure that stores observations and feasible transitions in a sparse memory. SGM can be combined with goal-conditioned RL or imitative agents to solve long-horizon tasks across a diverse set of domains. We show that SGM significantly outperforms current state of the art methods on long-horizon, sparse-reward visual navigation tasks.
+Despite impressive results in deep reinforcement learning in recent years, solving
+long-horizon problems is a long-standing challenge due to their sparse signal and
+difficult credit assignment. When the input is high-dimensional and the task is
+complex, specifying a dense reward function becomes impractical. In this work,
+we introduce the Binary Latent Actor Critic (BLAC), an algorithm that combines
+methods from discrete representation learning with RL to efficiently solve sparse
+reward tasks from raw sensory input. BLAC encodes high-dimensional inputs into
+a discrete latent space and performs policy optimization directly on the discrete
+latent codes. We show that this method can solve robotic manipulation tasks like
+block pushing and stacking using only images as input for both states and goals
+faster than current state-of-the-art methods that utilize continuous representations
+or end-to-end learning. Importantly, BLAC solves tasks without access to any
+ground truth information about the reward or state space.

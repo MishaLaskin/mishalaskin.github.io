@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ post.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
         type="text/css">
 
@@ -35,8 +35,7 @@
                             <!--<center><p>
                                 <i>mlaskin at berkeley</i>
                             </p></center>-->
-                            <p>I am a postdoc in the <a target='_blank' href="https://bair.berkeley.edu/">Berkeley Artificial Intellignece Research (BAIR)</a> lab, which is part
-                                 at UC Berkeley, where I work on deep unsupervised and reinforcement learning with <a target='_blank' href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>. 
+                            <p>I am a postdoc at UC Berkeley in the <a target='_blank' href="https://bair.berkeley.edu/">Berkeley Artificial Intellignece Research (BAIR)</a> lab, where I work on deep unsupervised and reinforcement learning with <a target='_blank' href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>. 
                             </p>
                             <p>
                                 I received my PhD in theoretical physics from the <a href="https://physics.uchicago.edu/">University of Chicago</a>, 
@@ -104,14 +103,16 @@
                             <a href="{{post.video}}">video</a> /
                             {% endif %}
                             {% if post.code %}
-                            <a href="{{post.code}}">code</a> /
+                            <a href="{{post.code}}">code</a>
+                        
                             {% endif %}
+                            <!-- /
                             {% if post.poster %}
                             <a href="{{post.poster}}">poster</a> /
                             {% endif %}
                             {% if post.slides %}
                             <a href="{{post.slides}}">slides</a> /
-                            {% endif %}
+                            {% endif %}-->
                             <p></p>
                             {{ post.excerpt }}
                         </td>
