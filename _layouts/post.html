@@ -29,17 +29,24 @@ layout: post
             </nav>
         <h1> {{page.title}}</h1>
         <center><p>{{page.authors}}</p></center>
-       
+        {% if page.equal %} <center><p>* equal contribution</p></center> {% endif %}
+
         <center>
             <p>
                 {% if page.code %}<a target='_blank' href="{{page.code}}">code</a>{% endif %} / 
                 {% if page.arxiv %}<a target='_blank' href="{{page.arxiv}}">arxiv</a>{% endif %}
             </p>
         </center>
+
         
         <p>
-            <b>TL;DR</b> {{page.excerpt}}
+            <b>Overview</b> {{page.excerpt}}
         </p>
+        <center>
+                {% if page.video %}<iframe src="{{page.video}}"
+                width="560" height="315" frameborder="0" allowfullscreen></iframe>
+              {% endif %} 
+        </center>
         <p>
             <b>Abstract:</b>
             {{ page.content | remove: page.excerpt }}
