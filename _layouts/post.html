@@ -27,14 +27,15 @@ layout: post
             <nav>
                 <a href="/"> <<< Back </a>
             </nav>
-        <h1> {{page.title}}</h1>
-        <center><p>{{page.authors}}</p></center>
+        <h1 style="font-size:50px"> {{page.title}}</h1>
+        <center><h2>{{page.authors}}</h2></center>
         {% if page.equal %} <center><p>* equal contribution</p></center> {% endif %}
+        <center><h2>{{page.affiliation}}</h2></center>
 
         <center>
             <p>
-                {% if page.code %}<a target='_blank' href="{{page.code}}">code</a>{% endif %} / 
-                {% if page.arxiv %}<a target='_blank' href="{{page.arxiv}}">arxiv</a>{% endif %}
+                {% if page.code %}<a  style="font-size:25px" target='_blank' href="{{page.code}}">[Github Code]</a>{% endif %} 
+                {% if page.arxiv %}<a style="font-size:25px" target='_blank' href="{{page.arxiv}}">[Paper]</a>{% endif %}
             </p>
         </center>
 
