@@ -9,7 +9,7 @@ affiliation: UC Berkeley, FAIR
 authors: "<b>Michael Laskin*</b>, Scott Emmons*, Ajay Jain*, Thanard Kurutach, Pieter Abbeel, Deepak Pathak"
 venue: "In Submission"
 code: https://github.com/scottemmons/sgm
-arxiv: https://drive.google.com/file/d/1-Us-ZxQKjdF5_Wbqspef5uxAydxCtYxG/view
+arxiv: http://arxiv.org/abs/2003.06417
 video: https://youtube.com/embed/n3F3i7F3Lcg
 equal: '*'
 ---
