@@ -1,0 +1,31 @@
+---
+permalink: /curl/
+layout: post
+title:  "CURL: Contrastive Unsupervised Representations for Reinforcement Learning"
+date:   2020-04-06 11:10:11 -0800
+image: /images/discrete_reps.png
+categories: research
+affiliation: UC Berkeley, BAIR
+authors: "Aravind Srinivas*, <b>Michael Laskin*</b>, Pieter Abbeel"
+venue: "In Submission"
+code: https://github.com/MishaLaskin/curl
+arxiv: http://arxiv.org/abs/2003.06417
+equal: '*'
+
+---
+
+
+This work aims to answer the following question - can pixel-based RL be as efficient as RL from coordinate state? Traditionally, it has been widely assumed that pixel-based methods are data inefficient, often taking 100M+ steps to train. On the contrary, we show for the first time that the answer is yes. 
+
+We present CURL: Contrastive Unsupervised Representations for Reinforcement Learning. CURL extracts high-level features from raw pixels using contrastive learning and performs off-policy control on top of the extracted features. CURL outperforms prior pixel-based methods, both model-based and model-free, on complex tasks in the DeepMind Control Suite and Atari Games showing 2.8x and 1.6x performance gains respectively at the 100K interaction steps benchmark. On the DeepMind Control Suite, CURL is the first image-based algorithm to nearly match the sample-efficiency and performance of methods that use state-based features.
+
+## BibTex
+<pre>
+@unpublished{srinivas_laskin2020curl,
+  title={CURL: Contrastive Unsupervised Representations for Reinforcement Learning},
+  author={Srinivas, Aravinc and Laskin, Michael and Abbeel, Pieter},
+  note={arXiv:2003.06417}
+}
+</pre>
+
+
