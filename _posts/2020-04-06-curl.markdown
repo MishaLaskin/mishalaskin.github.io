@@ -3,7 +3,7 @@ permalink: /curl/
 layout: post
 title:  "CURL: Contrastive Unsupervised Representations for Reinforcement Learning"
 date:   2020-04-06 11:10:11 -0800
-image: /images/discrete_reps.png
+image: /images/curl_img.png
 categories: research
 affiliation: UC Berkeley, BAIR
 authors: "Aravind Srinivas*, <b>Michael Laskin*</b>, Pieter Abbeel"
