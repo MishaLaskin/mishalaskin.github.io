@@ -15,9 +15,45 @@ equal: '*'
 ---
 
 
-This work aims to answer the following question - can pixel-based RL be as efficient as RL from coordinate state? Traditionally, it has been widely assumed that pixel-based methods are data inefficient, often taking 100M+ steps to train. On the contrary, we show for the first time that the answer is yes. 
+This work aims to answer the following question - can pixel-based RL be as efficient as RL from coordinate state? Traditionally, it has been widely assumed that pixel-based RL is data inefficient, often taking 100M+ interaction steps to solve benchmark tasks like Atari games. On the contrary, we show for the first time that the answer is yes. 
 
 We present CURL: Contrastive Unsupervised Representations for Reinforcement Learning. CURL extracts high-level features from raw pixels using contrastive learning and performs off-policy control on top of the extracted features. CURL outperforms prior pixel-based methods, both model-based and model-free, on complex tasks in the DeepMind Control Suite and Atari Games showing 2.8x and 1.6x performance gains respectively at the 100K interaction steps benchmark. On the DeepMind Control Suite, CURL is the first image-based algorithm to nearly match the sample-efficiency and performance of methods that use state-based features.
+
+<center>
+<img src="/images/curl_diagram.png" alt="drawing" style="width:80%;"/>
+</center>
+
+
+## Method 
+
+CURL learns contrastive representations jointly with the RL objective. The representation learning is done as an auxiliary task that can be coupled to any model-free RL algorithm. In our paper, we combine contrastive representation learning with two state of the art algorithms (i) Soft Actor Critic (SAC) for continuous control and (ii) Rainbow DQN for discrete control. Contrastive representations are learned by specifying an anchor observation, and then maximizing / minimizing agreement between positive / negative pairs through Noise Contrastive Estimation. A high-level diagram of CURL is shown above; for more details refer to the paper.
+
+## Results
+
+(1) CURL matches the data-efficiency of state-based SAC on most DeepMind control tasks.
+
+<center>
+<img src="/images/curl/curl_vs_state.png" alt="drawing" style="width:60%;"/>
+</center>
+
+(2) CURL is the state-of-the-art on all DeepMind control environments that are extensively benchmarked by competing baselines - across both model-free and model-based methods.
+
+<center>
+<img src="/images/curl/curl_dmc.png" alt="drawing" style="width:80%;"/>
+</center>
+
+(3) CURL is the state-of-the-art method in terms of data-efficiency on the majority of Atari experiments.
+
+<center>
+<img src="/images/curl/curl_atari.png" alt="drawing" style="width:80%;"/>
+</center>
+
+(4) CURL is signficantly simpler and more data-efficient than a leading model-based method, Dreamer, across most of the DeepMind control tasks tested.
+
+<center>
+<img src="/images/curl/curl_vs_dreamer.png" alt="drawing" style="width:50%;"/>
+</center>
+
 
 ## BibTex
 <pre>

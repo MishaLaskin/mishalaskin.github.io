@@ -9,7 +9,7 @@ arxiv: https://drive.google.com/file/d/1-Us-ZxQKjdF5_Wbqspef5uxAydxCtYxG/view
 authors: "<b>Michael Laskin</b>, Thanard Kurutach, Pieter Abbeel"
 venue: "NeurIPS 2019 (Deep Reinforcement Learning Workshop)"
 ---
-The pixel observation space is huge (for a 64x64 pixel image there are (64^2*3)^255 possible images). Discrete latent encoding dramatically reduces the visual representation space, which allows RL algorithms to solve goals directly from images more efficiently than prior methods.
+The pixel observation space is very large. For a 64x64 pixel grid there are more possible images than atoms in our universe. Discrete latent encoding dramatically reduces the visual representation space by mapping images to lower dimensional discrete vectors. Operating on these vectors allows RL algorithms to solve goals directly from images more efficiently than prior methods.
 
 <!--<div style="text-align:center"><img style="width:100%;max-width:20%" src="/images/cleanup_obs.gif1" /></div>-->
 

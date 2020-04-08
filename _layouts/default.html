@@ -97,13 +97,13 @@
                             <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
                             <br>
                             {% if post.arxiv %}
-                            <a target='_blank' href="{{post.arxiv}}">arxiv</a> /
+                            <a target='_blank' href="{{post.arxiv}}">paper</a> 
                             {% endif %}
                             {% if post.video %}
-                            <a href="{{post.video}}">video</a> /
+                            / <a href="{{post.video}}">video</a> 
                             {% endif %}
                             {% if post.code %}
-                            <a href="{{post.code}}">code</a>
+                            / <a href="{{post.code}}">code</a>
                         
                             {% endif %}
                             <!-- /
