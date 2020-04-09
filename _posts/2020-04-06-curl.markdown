@@ -9,7 +9,7 @@ affiliation: UC Berkeley, BAIR
 authors: "Aravind Srinivas*, <b>Michael Laskin*</b>, Pieter Abbeel"
 venue: "In Submission"
 code: https://github.com/MishaLaskin/curl
-arxiv: http://arxiv.org/abs/2003.06417
+arxiv: https://arxiv.org/abs/2004.04136
 equal: '*'
 
 ---
