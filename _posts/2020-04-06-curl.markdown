@@ -48,7 +48,7 @@ CURL learns contrastive representations jointly with the RL objective. The repre
 <img src="/images/curl/curl_atari.png" alt="drawing" style="width:80%;"/>
 </center>
 
-(4) CURL is signficantly simpler and more data-efficient than a leading model-based method, Dreamer, across most of the DeepMind control tasks tested.
+(4) CURL is signficantly simpler and more data-efficient than a leading model-based method, Dreamer, across most of the DeepMind control tasks tested. This plot shows how many steps it takes Dreamer (blue) to match CURL performance at 100k steps (red line).
 
 <center>
 <img src="/images/curl/curl_vs_dreamer.png" alt="drawing" style="width:50%;"/>
