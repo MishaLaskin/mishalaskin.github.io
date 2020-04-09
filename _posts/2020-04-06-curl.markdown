@@ -6,7 +6,7 @@ date:   2020-04-06 11:10:11 -0800
 image: /images/curl_img.png
 categories: research
 affiliation: UC Berkeley, BAIR
-authors: "Aravind Srinivas*, <b>Michael Laskin*</b>, Pieter Abbeel"
+authors: "<b>Michael Laskin*</b>, Aravind Srinivas*, Pieter Abbeel"
 venue: "In Submission"
 code: https://github.com/MishaLaskin/curl
 arxiv: https://arxiv.org/abs/2004.04136
