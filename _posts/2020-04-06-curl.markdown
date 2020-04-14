@@ -49,7 +49,7 @@ CURL learns contrastive representations jointly with the RL objective. The repre
 <img src="/images/curl/bair_blog_curl_dmc.png" alt="drawing" style="width:80%;"/>
 </center>
 
-(2) CURL achieves state-of-the-art score median scores at 500k frames on DeepMind control environments that are extensively benchmarked by competing baselines - across both model-free and model-based methods. At the 500k frame benchmark, CURL matches median state-based performance.
+(2) CURL achieves state-of-the-art median scores at 500k frames on DeepMind control environments that are extensively benchmarked by competing baselines - across both model-free and model-based methods. At the 500k frame benchmark, CURL matches median state-based performance.
 
 <center>
 <img src="/images/curl/curl_bair_dmc.png" alt="drawing" style="width:80%;"/>
