@@ -66,7 +66,7 @@ CURL learns contrastive representations jointly with the RL objective. The repre
 <pre>
 @unpublished{laskin_srinivas2020curl,
   title={CURL: Contrastive Unsupervised Representations for Reinforcement Learning},
-  author={Srinivas, Aravinc and Laskin, Michael and Abbeel, Pieter},
+  author={Laskin, Michael and Srinivas, Aravind and Abbeel, Pieter},
   note={arXiv:2003.06417}
 }
 </pre>
