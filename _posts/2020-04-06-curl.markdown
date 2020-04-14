@@ -17,10 +17,18 @@ equal: '*'
 
 This work aims to answer the following question - can pixel-based RL be as efficient as RL from coordinate state? Traditionally, it has been widely assumed that pixel-based RL is data inefficient, often taking 100M+ interaction steps to solve benchmark tasks like Atari games. On the contrary, we show for the first time that the answer is yes. 
 
+
+
+
+
+
+
+
+
 We present CURL: Contrastive Unsupervised Representations for Reinforcement Learning. CURL extracts high-level features from raw pixels using contrastive learning and performs off-policy control on top of the extracted features. CURL outperforms prior pixel-based methods, both model-based and model-free, on complex tasks in the DeepMind Control Suite and Atari Games showing 2.8x and 1.6x performance gains respectively at the 100K interaction steps benchmark. On the DeepMind Control Suite, CURL is the first image-based algorithm to nearly match the sample-efficiency and performance of methods that use state-based features.
 
 <center>
-<img src="/images/curl_diagram.png" alt="drawing" style="width:80%;"/>
+<img src="/images/curl/curl_diagram.png" alt="drawing" style="width:80%;"/>
 </center>
 
 
@@ -33,31 +41,25 @@ CURL learns contrastive representations jointly with the RL objective. The repre
 (1) CURL matches the data-efficiency of state-based SAC on most DeepMind control tasks.
 
 <center>
-<img src="/images/curl/curl_vs_state.png" alt="drawing" style="width:60%;"/>
+<img src="/images/curl/bair_blog_curl_dmc.png" alt="drawing" style="width:80%;"/>
 </center>
 
-(2) CURL is the state-of-the-art on all DeepMind control environments that are extensively benchmarked by competing baselines - across both model-free and model-based methods.
+(2) CURL achieves state-of-the-art score median scores at 500k frames on DeepMind control environments that are extensively benchmarked by competing baselines - across both model-free and model-based methods. At the 500k frame benchmark, CURL matches median state-based performance.
 
 <center>
-<img src="/images/curl/curl_dmc.png" alt="drawing" style="width:80%;"/>
+<img src="/images/curl/curl_bair_dmc.png" alt="drawing" style="width:80%;"/>
 </center>
 
-(3) CURL is the state-of-the-art method in terms of data-efficiency on the majority of Atari experiments.
+(3) CURL achieves state-of-the-art median scores across 26 Atari games at the 100k frame benchmark first proposed by the authors of SimPLe.
 
 <center>
-<img src="/images/curl/curl_atari.png" alt="drawing" style="width:80%;"/>
-</center>
-
-(4) CURL is signficantly simpler and more data-efficient than a leading model-based method, Dreamer, across most of the DeepMind control tasks tested. This plot shows how many steps it takes Dreamer (blue) to match CURL performance at 100k steps (red line).
-
-<center>
-<img src="/images/curl/curl_vs_dreamer.png" alt="drawing" style="width:50%;"/>
+<img src="/images/curl/curl_bair_atari.png" alt="drawing" style="width:80%;"/>
 </center>
 
 
 ## BibTex
 <pre>
-@unpublished{srinivas_laskin2020curl,
+@unpublished{laskin_srinivas2020curl,
   title={CURL: Contrastive Unsupervised Representations for Reinforcement Learning},
   author={Srinivas, Aravinc and Laskin, Michael and Abbeel, Pieter},
   note={arXiv:2003.06417}
