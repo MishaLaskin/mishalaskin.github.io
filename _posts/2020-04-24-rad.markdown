@@ -9,7 +9,7 @@ affiliation: UC Berkeley, BAIR
 authors: "<b>Michael Laskin*</b>, Kimin Lee*, Adam Stooke, Lerrel Pinto, Pieter Abbeel, Aravind Srinivas"
 venue: "In Submission"
 code: https://github.com/MishaLaskin/rad
-arxiv: https://arxiv.org/abs/
+arxiv: https://arxiv.org/
 equal: '*'
 
 ---
