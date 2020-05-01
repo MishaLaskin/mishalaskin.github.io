@@ -1,7 +1,7 @@
 ---
 permalink: /rad/
 layout: post
-title:  "RAD: Reinforcement Learning with Augmented Data"
+title:  "Reinforcement Learning with Augmented Data"
 date:   2020-04-24 11:10:11 -0800
 image: /images/rad/rad_thumbnail.png
 categories: research
