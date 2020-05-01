@@ -9,7 +9,7 @@ affiliation: UC Berkeley, BAIR
 authors: "<b>Michael Laskin*</b>, Kimin Lee*, Adam Stooke, Lerrel Pinto, Pieter Abbeel, Aravind Srinivas"
 venue: "In Submission"
 code: https://github.com/MishaLaskin/rad
-arxiv: https://arxiv.org/
+arxiv: https://arxiv.org/abs/2004.14990
 equal: '*'
 
 ---
@@ -73,7 +73,7 @@ To understand why random crop works so well on DeepMind control, we inspect spat
 @unpublished{laskin_lee2020rad,
   title={CURL: Contrastive Unsupervised Representations for Reinforcement Learning},
   author={Laskin, Michael and Lee, Kimin and Stooke, Adam and Pinto, Lerrel and Abbeel, Pieter and Srinivas, Aravind},
-  note={arXiv}
+  note={arXiv:2004.14990}
 }
 </pre>
 
