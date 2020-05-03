@@ -11,6 +11,8 @@ venue: "In Submission"
 code: https://github.com/MishaLaskin/rad
 arxiv: https://arxiv.org/abs/2004.14990
 equal: '*'
+press: https://venturebeat.com/2020/05/02/uc-berkeley-researchers-open-source-rad-to-improve-any-reinforcement-learning-algorithm/
+twitter: https://twitter.com/MishaLaskin/status/1257001857043529729
 
 ---
 

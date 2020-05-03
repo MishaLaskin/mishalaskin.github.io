@@ -11,7 +11,7 @@ venue: "In Submission"
 code: https://github.com/MishaLaskin/curl
 arxiv: https://arxiv.org/abs/2004.04136
 equal: '*'
-
+twitter: https://twitter.com/MishaLaskin/status/1248083499074142208
 ---
 
 
