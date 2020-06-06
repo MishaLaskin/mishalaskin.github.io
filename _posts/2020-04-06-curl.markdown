@@ -7,7 +7,7 @@ image: /images/curl/curl_img.png
 categories: research
 affiliation: UC Berkeley, BAIR
 authors: "<b>Michael Laskin*</b>, Aravind Srinivas*, Pieter Abbeel"
-venue: "In Submission"
+venue: "ICML 2020"
 code: https://github.com/MishaLaskin/curl
 arxiv: https://arxiv.org/abs/2004.04136
 equal: '*'
@@ -64,10 +64,12 @@ CURL learns contrastive representations jointly with the RL objective. The repre
 
 ## BibTex
 <pre>
-@unpublished{laskin_srinivas2020curl,
+@article{laskin_srinivas2020curl,
   title={CURL: Contrastive Unsupervised Representations for Reinforcement Learning},
   author={Laskin, Michael and Srinivas, Aravind and Abbeel, Pieter},
-  note={arXiv:2003.06417}
+  note={arXiv:2003.06417},
+  journal={ICML},
+  year={2020}
 }
 </pre>
 
