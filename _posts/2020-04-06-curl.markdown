@@ -7,7 +7,7 @@ image: /images/curl/curl_img.png
 categories: research
 affiliation: UC Berkeley, BAIR
 authors: "<b>Michael Laskin*</b>, Aravind Srinivas*, Pieter Abbeel"
-venue: "ICML 2020"
+venue: "ICML"
 code: https://github.com/MishaLaskin/curl
 arxiv: https://arxiv.org/abs/2004.04136
 equal: '*'
