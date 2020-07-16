@@ -9,7 +9,7 @@ affiliation: UC Berkeley, BAIR
 authors: "<b>Michael Laskin*</b>, Aravind Srinivas*, Pieter Abbeel"
 venue: "ICML"
 code: https://github.com/MishaLaskin/curl
-arxiv: https://arxiv.org/abs/2004.04136
+arxiv: https://proceedings.icml.cc/static/paper_files/icml/2020/5951-Paper.pdf
 equal: '*'
 twitter: https://twitter.com/MishaLaskin/status/1248083499074142208
 summary: Showed for the first time that RL from pixels can be as efficient as RL from state by leveraging unsupervised contrastive representations. 
@@ -54,7 +54,7 @@ function myFunction() {
 Published in proceedings of <a target='_blank' href='https://proceedings.icml.cc/static/paper_files/icml/2020/5951-Paper.pdf'>ICML 2020 </a>
 <br>
   Links 👉 <a   target='_blank' href="{{page.code}}"><u>Github Code</u></a>
-        , <a  target='_blank' href="{{page.arxiv}}"><u> ArXiv Paper</u></a>
+        , <a  target='_blank' href="{{page.arxiv}}"><u> ICML Paper</u></a>
          , <a  onclick="myFunction()" href="#"><u> Cite BibTex</u></a>
 <br>
 Media	📰 
