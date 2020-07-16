@@ -1,28 +1,15 @@
 ---
 layout: post
 title:  "Discrete Representation Learning for Goal-Conditioned Visual Reinforcement Learning"
-date:   2020-03-06 11:10:11 -0800
+date:   2019-11-06 11:10:11 -0800
 image: /images/discrete_reps.png    
 categories: research
 affiliation: UC Berkeley
 arxiv: https://drive.google.com/file/d/1-Us-ZxQKjdF5_Wbqspef5uxAydxCtYxG/view
 authors: "<b>Michael Laskin</b>, Thanard Kurutach, Pieter Abbeel"
-venue: "NeurIPS 2019 (Deep Reinforcement Learning Workshop)"
+venue: "NeurIPS Deep Reinforcement Learning Workshop"
+summary: Discrete representations help reduce the size of the encoded observation space. We showed how utilizing a discrete bottleneck can improve goal-conditioned RL from pixels.
+
 ---
-The pixel observation space is very large. For a 64x64 pixel grid there are more possible images than atoms in our universe. Discrete latent encoding dramatically reduces the visual representation space by mapping images to lower dimensional discrete vectors. Operating on these vectors allows RL algorithms to solve goals directly from images more efficiently than prior methods.
 
-<!--<div style="text-align:center"><img style="width:100%;max-width:20%" src="/images/cleanup_obs.gif1" /></div>-->
-
-Despite impressive results in deep reinforcement learning in recent years, solving
-long-horizon problems is a long-standing challenge due to their sparse signal and
-difficult credit assignment. When the input is high-dimensional and the task is
-complex, specifying a dense reward function becomes impractical. In this work,
-we introduce the Binary Latent Actor Critic (BLAC), an algorithm that combines
-methods from discrete representation learning with RL to efficiently solve sparse
-reward tasks from raw sensory input. BLAC encodes high-dimensional inputs into
-a discrete latent space and performs policy optimization directly on the discrete
-latent codes. We show that this method can solve robotic manipulation tasks like
-block pushing and stacking using only images as input for both states and goals
-faster than current state-of-the-art methods that utilize continuous representations
-or end-to-end learning. Importantly, BLAC solves tasks without access to any
-ground truth information about the reward or state space.
+<meta http-equiv="refresh" content="0; URL='https://sites.google.com/view/deep-rl-workshop-neurips-2019/home'" />

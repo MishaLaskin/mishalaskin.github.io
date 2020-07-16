@@ -1,0 +1,17 @@
+---
+permalink: /sunrise/
+layout: post
+title:  "A Simple Unified Framework for Ensemble Learning in Deep Reinforcement Learning"
+date:   2020-07-10 11:10:11 -0800
+image: /images/sunrise/sunrise.png
+categories: research
+affiliation: UC Berkeley, BAIR
+authors: "Kimin Lee, <b>Michael Laskin</b>, Aravind Srinivas, Pieter Abbeel"
+venue: "In Submission"
+code: https://github.com/pokaxpoka/sunrise
+arxiv: https://arxiv.org/abs/2007.04938
+equal: '*'
+summary: Developed a unified framework for utilizing ensembles to greatly stabilize training of both state-based and pixel-based RL algorithms.
+external_url: https://sites.google.com/view/kiminlee#h.5dbuvie3ijjn
+---
+<meta http-equiv="refresh" content="0; URL='https://sites.google.com/view/kiminlee#h.5dbuvie3ijjn'" />

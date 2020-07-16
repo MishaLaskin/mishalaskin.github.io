@@ -13,6 +13,8 @@
     <link rel="canonical" href="{{ post.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
         type="text/css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css"/>
 
 
 
@@ -29,27 +31,25 @@
                     style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                     <tr style="padding:0px">
                         <td style="padding:2.5%;width:60%;vertical-align:middle">
-                            <h1>
-                                michael <i>(misha)</i> laskin
-                            </h1>
+                            
+                                <a target="_blank"  href="https://twitter.com/MishaLaskin"><h1> <i>michael (misha) laskin</i>  </h1></a> 
+                            
                             <!--<center><p>
                                 <i>mlaskin at berkeley</i>
                             </p></center>-->
-                            <p>I am a postdoc at UC Berkeley in the <a target='_blank' href="https://bair.berkeley.edu/">Berkeley Artificial Intellignece Research (BAIR)</a> lab, where I work on deep unsupervised and reinforcement learning with <a target='_blank' href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>. 
-                            </p>
                             <p>
+                                I'm a postdoc at UC Berkeley in the <a target='_blank' href="https://bair.berkeley.edu/">BAIR</a> lab, where I work on deep unsupervised and reinforcement learning with <a target='_blank' href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>. 
+                            
                                 I received my PhD in theoretical physics from the <a href="https://physics.uchicago.edu/">University of Chicago</a>, 
-                                where I worked on statisical physics and many-body quantum mechanics with <a target='_blank' href="https://en.wikipedia.org/wiki/Paul_Wiegmann">Paul Wiegmann</a>.
+                                where I worked on statisical quantum physics with <a target='_blank' href="https://en.wikipedia.org/wiki/Paul_Wiegmann">Paul Wiegmann</a>.
                                 During my PhD I received the <a target='_blank' href="https://physics.uchicago.edu/about/prizes-and-fellowships/">Bloomenthal Fellowship</a>, awarded to the best graduate student in theoretical physics.
-                            </p>
-                            <p>
-                                In between my PhD and postoc I started a company - <a target='_blank' href="https://wwd.com/business-news/technology/fash-tech-startup-claire-chatbot-facebook-messenger-10771266/">Claire AI</a> - which made AI products for the 
+                            
+                                In between my PhD and postdoc I started a company - <a target='_blank' href="https://wwd.com/business-news/technology/fash-tech-startup-claire-chatbot-facebook-messenger-10771266/">Claire AI</a> - which made AI products for the 
                                 retail sector and went through <a target='_blank' href="https://blog.ycombinator.com/yc-w17-launch-claire-peer5-waystocap-symple-rankscience-and-kudi/">Y Combinator (W17)</a>.
                                 My co-founder and I made the <a target='_blank' href="https://www.forbes.com/pictures/mlf45ffihi/misha-laskin-26-marta/#65c3bbcf3b58">Forbes 30 Under 30 list in 2017</a> for our 
                                 work in retail and e-commerce.
-                            </p>
-                            <p>
-                                Before that, I received my BS from Yale University where I studied physics and literature.
+                            
+                                Before that, I received a BS from Yale University where I studied physics and literature.
                             </p>
                             <p style="text-align:center">
                                 <a target="_blank" href="https://mailhide.io/e/db3Ew"> Email</a> &nbsp;/&nbsp;
@@ -60,21 +60,22 @@
                                 <a target="_blank"  href="https://www.linkedin.com/in/mishalaskin"> LinkedIn </a>
                             </p>
                         </td>
-                        <td style="padding:2.5%;width:40%;max-width:40%">
-                            <img style="width:100%;max-width:100%" alt="profile photo" src="images/misha_photo.jpg">
+                        <td style="padding:2.5%;width:25%;max-width:25%">
+                            <img class='rounded_img' style="width:100%;max-width:100%" alt="profile photo" src="images/misha_photo.jpg">
                         </td>
                     </tr>
                 </table>
+          
 
                 <table
                     style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                     <tr>
                         <td style="padding:2.5%;width:100%;vertical-align:middle">
                             <h2>AI Research</h2>
-                            <p>
-                                I'm interested in utilizing deep unsupervised and reinforcement learning to 
-                                make AI useful in real-world settings.
-                            </p>
+                            <br>
+                            <!--Interested in utilizing deep unsupervised and reinforcement learning to 
+                            make AI useful in real-world settings.-->
+                            
                         </td>
                     </tr>
                 </table>
@@ -86,14 +87,13 @@
                     {% if cat == 'research' %}
                     <tr>
                         <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-                            <img src="{{post.image}}" alt="project image"
+                            <img class='rounded_img hvr-bob' src="{{post.image}}" alt="project image"
                                 style="width:auto; height:auto; max-width:100%;" />
                         </td>
                         <td style="padding:2.5%;width:75%;vertical-align:middle">
-                            <h3><a href={{post.url}} >{{post.title}}</a></h3>
+                            <h3 class='hvr-skew'><a class='header_font' href={{post.url}} >{{post.title}}</a></h3>
                             <br>
                             {{post.authors}}
-
                             <br>
                             <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
                             <br>
@@ -120,8 +120,8 @@
                             {% if post.slides %}
                             <a href="{{post.slides}}">slides</a> /
                             {% endif %}-->
-                            
-                            {{ post.excerpt }}
+                            <br>
+                            {{ post.summary }}
                         </td>
                     </tr>
                     {% endif %}

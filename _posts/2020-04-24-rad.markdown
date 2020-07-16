@@ -13,70 +13,118 @@ arxiv: https://arxiv.org/abs/2004.14990
 equal: '*'
 press: https://venturebeat.com/2020/05/02/uc-berkeley-researchers-open-source-rad-to-improve-any-reinforcement-learning-algorithm/
 twitter: https://twitter.com/MishaLaskin/status/1257001857043529729
-
+summary: First extensive study of image augmentation in the RL setting. Showed that simple RL algorithms with augmented data achieve SOTA results on many common RL benchmarks.
 ---
+<script>
+function myFunction() {
+  var x = document.getElementById("bibtex");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
+</script>
+# Reinforcement Learning with <br>Augmented Data
+<br> 
 
-We perform the first extensive study of image augmentation in the RL setting and show, surprisingly, that simple RL algorithms with augmented data achieve state-of-the-art results for data-efficiency on DeepMind control and test-time generalization on OpenAI ProcGen environments.
+<div class="table-like" style="justify-content:space-evenly;max-width:800px;margin:;">
+      <div><span class='author_name'><a href="https://mishalaskin.github.io/" target="_blank">Misha Laskin*</a></span>
+      <br>
+      <span class='author_name'>UC Berkeley</span>
+      </div>
+      <div><span class='author_name'><a href="https://sites.google.com/view/kiminlee" target="_blank">Kimin Lee*</a></span>
+      <br>
+      <span class='author_name'>UC Berkeley</span>
+      </div>
 
+      <div><span class='author_name'><a href="https://www.linkedin.com/in/adam-stooke-06bb6923/" target="_blank">Adam Stooke</a></span>
+      <br>
+      <span class='author_name'>UC Berkeley</span>
+      </div>
+    
+      <div><span class='author_name'><a href="https://cs.nyu.edu/~lp91/" target="_blank">Lerrel Pinto</a></span>
+      <br>
+        <span class='author_name'>UC Berkeley</span>
+        </div>
 
-Learning from visual observations is a fundamental yet challenging problem in reinforcement learning (RL). Although algorithmic advancements combined with convolutional neural networks have proved to be a recipe for success, current methods are still lacking on two fronts: (a) sample efficiency of learning and (b) generalization to new environments. To this end, we present RAD: Reinforcement Learning with Augmented Data, a simple plug-and-play module that can enhance any RL algorithm. We show that data augmentations such as random crop, color jitter, patch cutout, and random convolutions can enable simple RL algorithms to match and even outperform complex state-of-the-art methods across common benchmarks in terms of data-efficiency, generalization, and wall-clock speed. We find that data diversity alone can make agents focus on meaningful information from high-dimensional observations without any changes to the reinforcement learning method. On the DeepMind Control Suite, we show that RAD is state-of-the-art in terms of data-efficiency and performance across 15 environments. We further demonstrate that RAD can significantly improve the test-time generalization on several OpenAI ProcGen benchmarks. Finally, our customized data augmentation modules enable faster wall-clock speed compared to competing RL techniques.
+      <div><span class='author_name'><a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a></span>
+      <br><span class='author_name'>UC Berkeley</span>
+      </div>
 
-<center>
-<img src="/images/rad/rad_teaser.png" alt="" style="width:80%;"/>
-</center>
+      <div><span class='author_name'><a href="https://people.eecs.berkeley.edu/~aravind/" target="_blank"> Aravind Srinivas</a></span>
+      <br><span class='author_name'>UC Berkeley</span>
+      </div>
+</div>
+<span>* equal contribution</span>
 
+<br>
 
-## Method 
+<p>
+  Links 👉 <a   target='_blank' href="{{page.code}}"><u>Github Code</u></a>
+        , <a  target='_blank' href="{{page.arxiv}}"><u> ArXiv Paper</u></a>
+         , <a  onclick="myFunction()" href="#"><u> Cite BibTex</u></a>
+<br>
+Media	📰 <a  target='_blank' href="{{page.press}}"><u> VentureBeat Article</u></a>,
+ <a  target="_blank" href="https://twitter.com/MishaLaskin/status/1275595976510758918"><u> Twitter</u></a>
+</p>
 
-In our paper, we show how data augmentation improves performance and generalization abilities of standard RL algorithms, both on and off-policy. We combine data augmentation with (i) Soft Actor Critic (SAC) for solving tasks on DeepMind control and (ii) PPO for ProcGen environments. Our method does not change the underlying RL pipeline - it only augments the underlying data. 
-
-## Results
-
-(1) <b>RAD is the state-of-the-art algorithm</b> on the majority (<b>5</b> out of <b>6</b>) extensively benchmarked environments on both DMControl100k and DMControl500k benchmarks, matching or outperforming CURL, Dreamer, PlaNet, SLAC, SAC+AE, and Pixel SAC.
-
-(2) RAD quickly <b>matches state based performance</b> on the majority (<b>11</b> out of <b>15</b>) of DeepMind control algorithms. It also performs comparably to or better than the prior state of the art algorithm for data efficiency - [CURL](https://mishalaskin.github.io/rad). 
-
-<center>
-<img src="/images/rad/rad_all_dmc.png" alt="" style="width:80%;"/>
-</center>-
-
-(3) <b>Random crop</b>, stand-alone, <b>has the highest impact</b> on final performance relative to all other augmentations on DeepMind control. We ablate pair-wise permutations of 6 common augmentations and measure the performance of walker, walk at 500k environments steps. While all data augmentations help, random crop alone results in the highest performance.
-
-<center>
-<img src="/images/rad/rad_walker_ablation.png" alt="drawing" style="width:80%;"/>
-</center>
-
-(4) <b>RAD achieves state-of-the-art test-time generalization</b> on ProcGen environments like BigFish and StarPilot. Again, RAD with random crop <b>achieves 55.8% relative gain</b> to pixel-based PPO in the BigFish environment. 
-
-(5) RAD trained with 100 training levels outperforms the pixel-based PPO trained with 200 training levels on both BigFish and StarPilot environments. This shows that data augmentation can be more effective in learning generalizable representations compared to simply increasing the number of training environments.
-
-<center>
-<img src="/images/rad/rad_big_fish.png" alt="drawing" style="width:80%;"/>
-</center>
-
-(5) Random crop fails in environments that require structural generalization (e.g. adapting to new map layout) like Jumper and CoinRun. However, color augmentation like random convolution and color jitter still improve test-time performance on environments like CoinRun. 
-
-<center>
-<img src="/images/rad/rad_coin_run.png" alt="drawing" style="width:80%;"/>
-</center>
-
-## Why is random crop so effective?
-
-To understand why random crop works so well on DeepMind control, we inspect spatial attention maps across the convolutional encoder for policies learned with all of the various augmentations, including the no augmentation baseline. We notice that random crop help the encoder localize the agent more accurately and reliably than the other augmentations on DeepMind control. In particular, while other augmentations also pay attention to distractors (e.g. stars in the background) or fail to capture the agent state, the policy learned with random crop crisply and reliably extracts the agent from the frame. This suggests that spatial observation jittering helps develop the base agent develop contingency awareness.
-
-<center>
-<img src="/images/rad/rad_why_crop.png" alt="drawing" style="width:80%;"/>
-</center>
-
-
-## BibTex
-<pre>
+<div style='display:none;font-size:12px' id="bibtex">
+  <pre>
 @unpublished{laskin_lee2020rad,
   title={Reinforcement Learming with Augmented Data},
-  author={Laskin, Michael and Lee, Kimin and Stooke, Adam and Pinto, Lerrel and Abbeel, Pieter and Srinivas, Aravind},
+  author={Laskin, Michael and Lee, Kimin and Stooke,
+  Adam and Pinto, Lerrel and Abbeel, Pieter and Srinivas, Aravind},
   note={arXiv:2004.14990}
 }
 </pre>
+</div>
 
 
+<br>
+
+
+## Summary
+
+Learning from visual observations is a fundamental yet challenging problem in reinforcement learning (RL). Although algorithmic advancements combined with convolutional neural networks have proved to be a recipe for success, current methods are still lacking on two fronts: (a) <i>sample efficiency of learning</i> and (b) <i>generalization to new environments</i>. 
+
+To this end, we present RAD: Reinforcement Learning with Augmented Data, a simple plug-and-play module that can enhance any RL algorithm. We show that data augmentations such as random crop, color jitter, patch cutout, and random convolutions can enable simple RL algorithms to match and even outperform complex state-of-the-art methods across common benchmarks in terms of data-efficiency, generalization, and wall-clock speed. We find that data diversity alone can make agents focus on meaningful information from high-dimensional observations without any changes to the reinforcement learning method. 
+
+On the DeepMind Control Suite, we show that RAD is state-of-the-art in terms of data-efficiency and performance across 15 environments. We further demonstrate that RAD can significantly improve the test-time generalization on several OpenAI ProcGen benchmarks. Finally, our customized data augmentation modules enable faster wall-clock speed compared to competing RL techniques.
+
+<br>
+
+## Augmentations 
+
+For pixel-based environments, we considered a diverse set of data augmentations and found that random cropping and translation alone enabled a simple RL algorithm (SAC) to achieve state-of-the-art performance, surpassing more complex algorithms. We showed similar results for state-based RL with a new augmentation - <i> random amplitude scaling</i>.
+
+<br>
+<center>
+<img class='hvr-grow' src="/images/rad/rad_all_augs_overview.png" alt="" style="width:90%;"/>
+</center>
+
+<br>
+
+## Results
+
+RAD outperformed previously competing baselines on the DeepMind control suite and, most suprisingly, matched and sometimes outperformed the state-based baseline where the RL agent had access to coordinate state. We also showed state-of-the-art results for generalization in pixel-based environments (ProcGen) and performance state-based RL (OpenAI gyn).
+
+<br>
+<center>
+<img class='hvr-grow' src="/images/rad/fig5.png" alt="" style="width:80%;"/>
+</center>
+<br>
+<hr>
+<br>
+<center><a  target='_blank' href="{{page.arxiv}}"><u> More details on ArXiv</u></a> </center>
+<br>
+<center>
+<a  target='_blank' href="{{page.arxiv}}">
+<img class='hvr-grow' src="/images/rad/rad_paper_thumbnail.png" alt="" style="width:80%;"/>
+</a>
+</center>
+
+<br>
+<hr>
+<br>

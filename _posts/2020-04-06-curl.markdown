@@ -12,65 +12,116 @@ code: https://github.com/MishaLaskin/curl
 arxiv: https://arxiv.org/abs/2004.04136
 equal: '*'
 twitter: https://twitter.com/MishaLaskin/status/1248083499074142208
+summary: Showed for the first time that RL from pixels can be as efficient as RL from state by leveraging unsupervised contrastive representations. 
+
 ---
 
+<script>
+function myFunction() {
+  var x = document.getElementById("bibtex");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
-This work aims to answer the following question - can pixel-based RL be as efficient as RL from coordinate state? Traditionally, it has been widely assumed that pixel-based RL is data inefficient, often taking 100M+ interaction steps to solve benchmark tasks like Atari games. On the contrary, we show for the first time that the answer is yes. 
+</script>
+# CURL: Contrastive Unsupervised Representations for Reinforcement Learning
+<br> 
 
+<div class="table-like" style="justify-content:space-evenly;max-width:800px;margin:;">
+      <div><span class='author_name'><a href="https://mishalaskin.github.io/" target="_blank">Misha Laskin*</a></span>
+      <br>
+      <span class='author_name'>UC Berkeley</span>
+      </div>
+     
+      <div><span class='author_name'><a href="https://people.eecs.berkeley.edu/~aravind/" target="_blank"> Aravind Srinivas*</a></span>
+      <br><span class='author_name'>UC Berkeley</span>
+      </div>
+      
+      <div><span class='author_name'><a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a></span>
+      <br><span class='author_name'>UC Berkeley</span>
+      </div>
 
-
-
-
-
-
-
-
-We present CURL: Contrastive Unsupervised Representations for Reinforcement Learning. CURL extracts high-level features from raw pixels using contrastive learning and performs off-policy control on top of the extracted features. CURL outperforms prior pixel-based methods, both model-based and model-free, on complex tasks in the DeepMind Control Suite and Atari Games showing 2.8x and 1.6x performance gains respectively at the 100K interaction steps benchmark. On the DeepMind Control Suite, CURL is the first image-based algorithm to nearly match the sample-efficiency and performance of methods that use state-based features.
-
-<center>
-<img src="/images/curl/curl_diagram.png" alt="drawing" style="width:80%;"/>
-</center>
-
-
-## Method 
-
-CURL learns contrastive representations jointly with the RL objective. The representation learning is done as an auxiliary task that can be coupled to any model-free RL algorithm. In our paper, we combine contrastive representation learning with two state of the art algorithms (i) Soft Actor Critic (SAC) for continuous control and (ii) Rainbow DQN for discrete control. Contrastive representations are learned by specifying an anchor observation, and then maximizing / minimizing agreement between positive / negative pairs through Noise Contrastive Estimation. A high-level diagram of CURL is shown above; for more details refer to the paper.
-
-## Results
-
-<center>
-<div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/a6SyIg4HrbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
 </div>
-</center>
-(1) CURL matches the data-efficiency of state-based SAC on most DeepMind control tasks.
+<span>* equal contribution</span>
 
-<!--<center>
-<img src="/images/curl/bair_blog_curl_dmc.png" alt="drawing" style="width:80%;"/>
-</center>-->
+<br>
 
-(2) CURL achieves state-of-the-art median scores at 500k frames on DeepMind control environments that are extensively benchmarked by competing baselines - across both model-free and model-based methods. At the 500k frame benchmark, CURL matches median state-based performance.
+<p>
+Published in proceedings of <a target='_blank' href='https://proceedings.icml.cc/static/paper_files/icml/2020/5951-Paper.pdf'>ICML 2020 </a>
+<br>
+  Links 👉 <a   target='_blank' href="{{page.code}}"><u>Github Code</u></a>
+        , <a  target='_blank' href="{{page.arxiv}}"><u> ArXiv Paper</u></a>
+         , <a  onclick="myFunction()" href="#"><u> Cite BibTex</u></a>
+<br>
+Media	📰 
+ <a  target="_blank" href="https://twitter.com/MishaLaskin/status/1248083499074142208"><u> Twitter</u></a>
+</p>
 
-<center>
-<img src="/images/curl/curl_bair_dmc.png" alt="drawing" style="width:80%;"/>
-</center>
-
-(3) CURL achieves state-of-the-art median scores across 26 Atari games at the 100k frame benchmark first proposed by the authors of SimPLe.
-
-<center>
-<img src="/images/curl/curl_bair_atari.png" alt="drawing" style="width:80%;"/>
-</center>
-
-
-## BibTex
+<div style='display:none;font-size:12px' id="bibtex">
 <pre>
 @article{laskin_srinivas2020curl,
   title={CURL: Contrastive Unsupervised Representations for Reinforcement Learning},
   author={Laskin, Michael and Srinivas, Aravind and Abbeel, Pieter},
   note={arXiv:2003.06417},
-  journal={ICML},
+  journal={Proceedings of the 37th International Conference on Machine 
+  Learning, Vienna, Austria, PMLR 119},
   year={2020}
 }
 </pre>
 
+</div>
 
+
+<br>
+
+
+## Summary
+
+We present CURL: Contrastive Unsupervised Representations for Reinforcement Learning. CURL extracts high-level features from raw pixels using contrastive learning and performs offpolicy control on top of the extracted features. CURL outperforms prior pixel-based methods,
+both model-based and model-free, on complex tasks in the DeepMind Control Suite and Atari
+Games showing 1.9x and 1.2x performance gains at the 100K environment and interaction steps
+benchmarks respectively. On the DeepMind Control Suite, CURL is the first image-based algorithm to nearly match the sample-efficiency of methods that use state-based features.
+
+
+
+## Method 
+
+CURL learns contrastive representations jointly with the RL objective. The representation learning is done as an auxiliary task that can be coupled to any model-free RL algorithm. In our paper, we combine contrastive representation learning with two state of the art algorithms (i) Soft Actor Critic (SAC) for continuous control and (ii) Rainbow DQN for discrete control. Contrastive representations are learned by specifying an anchor observation, and then maximizing / minimizing agreement between positive / negative pairs through Noise Contrastive Estimation. A high-level diagram of CURL is shown below.
+
+<br>
+<center>
+<img class='hvr-grow' src="/images/curl/curl_diagram.png" alt="drawing" style="width:70%;"/>
+</center>
+<br>
+
+## Video
+
+Short video demonstrating efficient learning with CURL on DeepMind control.
+
+<br>
+<center>
+<div>
+<iframe width="400" height="225" src="https://www.youtube.com/embed/a6SyIg4HrbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</center>
+
+
+
+<br>
+<hr>
+<br>
+<center><a  target='_blank' href="{{page.arxiv}}"><u> More details on ArXiv</u></a> </center>
+<!--<br>
+<center>
+<a  target='_blank' href="{{page.arxiv}}">
+<img class='hvr-grow' src="/images/rad/rad_paper_thumbnail.png" alt="" style="width:80%;"/>
+</a>
+</center>-->
+
+<br>
+<hr>
+<br>

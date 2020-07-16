@@ -29,19 +29,27 @@ th,
 tr,
 p,
 a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-display: auto;
+}
+
+.post_body{
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Playfair Display', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-display: auto;
 }
 
+.header_font{
+  font-family: 'Playfair Display', Verdana, Helvetica, sans-serif;
+}
 h2 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Playfair Display', Verdana, Helvetica, sans-serif;
   font-size: 22px;
   font-display: auto;
   font-weight: normal;
@@ -51,7 +59,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Playfair Display', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700;
   font-display: auto;
@@ -61,11 +69,11 @@ h3 {
 }
 
 h1 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: 'Playfair Display', Verdana, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: normal;
   font-display: auto;
-  text-align: center;
+  //text-align: center;
   padding: 0px;
   margin-block-start: 14px;
   margin-block-end: 14px;
@@ -99,6 +107,38 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+.rounded_img {
+  border-radius: 10%
+}
+
+img.hoverImages {
+  margin:20px;
+  padding: 3px;
+  outline:2px solid #DDD;
+  border:#a1a1a1;
+  float:left;
+	-webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+
+img.hoverImages:hover {
+	cursor:pointer;
+    margin-top: 5px;
+}
+  
+
+.table-like {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: left !important;
+}
+
+
+.author_name {
+  margin-right:10px;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";
