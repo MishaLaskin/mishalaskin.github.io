@@ -114,7 +114,7 @@ Short video demonstrating efficient learning with CURL on DeepMind control.
 <br>
 <hr>
 <br>
-<center><a  target='_blank' href="{{page.arxiv}}"><u> More details on ArXiv</u></a> </center>
+<center><a  target='_blank' href="{{page.arxiv}}"><u> For further details, see the ICML paper</u></a> </center>
 <br>
 <center>
 <a  target='_blank' href="{{page.arxiv}}">
