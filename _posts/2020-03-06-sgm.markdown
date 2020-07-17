@@ -62,7 +62,7 @@ function showTweet() {
       </div>
 
       <div><span class='author_name'><a href="https://people.eecs.berkeley.edu/~pathak/" target="_blank"> D. Pathak</a></span>
-      <br><span class='author_name'>Deepak Pathak</span>
+      <br><span class='author_name'>CMU, FAIR</span>
       </div>
 </div>
 <span>* equal contribution</span>
