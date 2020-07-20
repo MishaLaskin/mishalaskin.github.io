@@ -58,7 +58,7 @@ Published in proceedings of <a target='_blank' href='https://proceedings.icml.cc
          , <a  onclick="myFunction()" href="#"><u> Cite BibTex</u></a>
 <br>
 Media	📰 
- <a  target="_blank" href="https://twitter.com/MishaLaskin/status/1248083499074142208"><u> Twitter</u></a>
+ <a  target="_blank" href="https://twitter.com/MishaLaskin/status/1248083499074142208"><u> Twitter</u></a>, <a  target="_blank" href="https://bair.berkeley.edu/blog/2020/07/19/curl-rad/"><u> BAIR blog </u></a>
 </p>
 
 <div style='display:none;font-size:12px' id="bibtex">

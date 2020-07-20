@@ -67,7 +67,7 @@ function myFunction() {
          , <a  onclick="myFunction()" href="#"><u> Cite BibTex</u></a>
 <br>
 Media	📰 <a  target='_blank' href="{{page.press}}"><u> VentureBeat Article</u></a>,
- <a  target="_blank" href="https://twitter.com/MishaLaskin/status/1275595976510758918"><u> Twitter</u></a>
+ <a  target="_blank" href="https://twitter.com/MishaLaskin/status/1275595976510758918"><u> Twitter</u></a>, <a  target="_blank" href="https://bair.berkeley.edu/blog/2020/07/19/curl-rad/"><u> BAIR blog </u></a>
 </p>
 
 <div style='display:none;font-size:12px' id="bibtex">
