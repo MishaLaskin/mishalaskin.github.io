@@ -139,7 +139,7 @@ For more information, check out our [paper]({{page.arxiv}}) and [codebase]({{pag
 <br>
 <center>
 <a  target='_blank' href="{{page.arxiv}}">
-<img class='hvr-grow' src="/images/rad/rad_paper_thumbnail.png" alt="" style="width:80%;"/>
+<img class='hvr-grow' src="/images/atc/atc_pdf.png" alt="" style="width:80%;"/>
 </a>
 </center>
 
