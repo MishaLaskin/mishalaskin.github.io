@@ -11,7 +11,7 @@ venue: "In Submission"
 code: https://github.com/astooke/rlpyt/tree/master/rlpyt/ul
 arxiv: https://arxiv.org/abs/2009.08319
 equal: '*'
-#twitter: https://twitter.com/MishaLaskin/status/1257001857043529729
+twitter: https://twitter.com/MishaLaskin/status/1306779645287763970
 summary: First algorithm that decouples unsupervised learning from reinforcement learning while matching or outperforming state-of-the-art end-to-end RL.
 
 ---
