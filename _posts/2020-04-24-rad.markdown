@@ -108,7 +108,7 @@ For pixel-based environments, we considered a diverse set of data augmentations 
 
 ## Results
 
-RAD outperformed previously competing baselines on the DeepMind control suite and, most suprisingly, matched and sometimes outperformed the state-based baseline where the RL agent had access to coordinate state. We also showed state-of-the-art results for generalization in pixel-based environments (ProcGen) and performance state-based RL (OpenAI gyn).
+RAD outperformed previously competing baselines on the DeepMind control suite and, most suprisingly, matched and sometimes outperformed the state-based baseline where the RL agent had access to coordinate state. We also showed state-of-the-art results for generalization in pixel-based environments (ProcGen) and performance state-based RL (OpenAI gym).
 
 <br>
 <center>

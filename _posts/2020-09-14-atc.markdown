@@ -1,0 +1,148 @@
+---
+permalink: /atc/
+layout: post
+title:  "Decoupling Representation Learning from Reinforcement Learning"
+date:   2020-09-12 11:10:11 -0800
+image: /images/atc/atc_thumbnail.png
+categories: research
+affiliation: UC Berkeley, BAIR
+authors: "Adam Stooke, Kimin Lee, Pieter Abbeel, <b>Michael Laskin</b>"
+venue: "In Submission"
+code: https://github.com/astooke/rlpyt/tree/master/rlpyt/ul
+arxiv: https://arxiv.org/abs/2009.08319
+equal: '*'
+#twitter: https://twitter.com/MishaLaskin/status/1257001857043529729
+summary: First algorithm that decouples unsupervised learning from reinforcement learning while matching or outperforming state-of-the-art end-to-end RL.
+
+---
+<script>
+function myFunction() {
+  var x = document.getElementById("bibtex");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+# Decoupling Representation Learning from Reinforcement Learning
+<br> 
+
+<div class="table-like" style="justify-content:space-evenly;max-width:800px;margin:;">
+
+      <div><span class='author_name'><a href="https://www.linkedin.com/in/adam-stooke-06bb6923/" target="_blank">Adam Stooke</a></span>
+      <br>
+      <span class='author_name'>UC Berkeley</span>
+      </div>
+    
+      <div><span class='author_name'><a href="https://sites.google.com/view/kiminlee" target="_blank">Kimin Lee</a></span>
+      <br>
+      <span class='author_name'>UC Berkeley</span>
+      </div>
+
+      <div><span class='author_name'><a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a></span>
+      <br><span class='author_name'>UC Berkeley</span>
+      </div>
+
+      <div><span class='author_name'><a href="https://mishalaskin.github.io/" target="_blank">Misha Laskin</a></span>
+      <br>
+      <span class='author_name'>UC Berkeley</span>
+      </div>
+</div>
+
+<br>
+
+<p>
+  Links 👉 <a   target='_blank' href="{{page.code}}"><u>Github Code</u></a>
+        , <a  target='_blank' href="{{page.arxiv}}"><u> ArXiv Paper</u></a>
+         , <a  onclick="myFunction()" href="#"><u> Cite BibTex</u></a>
+<br>
+Media	📰
+ <a  target="_blank" href="https://twitter.com/MishaLaskin/status/1275595976510758918"><u> Twitter</u></a>
+</p>
+
+<div style='display:none;font-size:12px' id="bibtex">
+  <pre>
+@unpublished{stooke2020atc,
+  title={Decoupling Representation Learning from Reinforcement Learning},
+  author={Stooke, Adam and Lee, Kimin and Abbeel, Pieter and Laskin, Michael},
+  note={arXiv:2004.14990}
+}
+</pre>
+</div>
+
+
+<br>
+
+
+## Summary
+
+In an effort to overcome limitations of reward-driven feature learning in deep reinforcement learning (RL) from images, we propose decoupling representation learning from policy learning.  To this end, we introduce a new unsupervised learning (UL) task, called Augmented Temporal Contrast (ATC), which trains a convolutional encoder by pairing augmented versions of observations separated by a short time difference, using a contrastive loss.  
+
+In online RL experiments, we show that training the encoder exclusively using ATC matches or outperforms end-to-end RL in most environments.  Additionally, we benchmark several leading UL algorithms by pre-training encoders on expert demonstrations and using them, with weights frozen, in RL agents; we find that agents using ATC-trained encoders outperform all others.  
+
+We also train multi-task encoders on data from multiple environments and show generalization to different downstream RL tasks.  Finally, we ablate components of ATC, and introduce a new data augmentation to enable replay of (compressed) latent images from pre-trained encoders when RL requires augmentation.  Our experiments span visually diverse RL benchmarks in DeepMind Control, DeepMind Lab, and Atari,
+
+<br>
+
+## Augmented Temporal Contrast
+
+Our method, Augmented Temporal Contrast (ATC), trains the CNN encoder with an unsupervised objective and then learns RL policies on top of the extracted features. The unsupervised objective is temporal contrast of observations and we also introduce a novel augmentation on the latent vectors - <i> latent random shift </i> - to regularize the latent features that the RL algorithm learns from. The full architecture is summarized in the image below:
+
+<br>
+<center>
+<img class='hvr-grow' src="/images/atc/atc_no_title.png" alt="" style="width:50%;"/>
+</center>
+
+<br>
+
+## Online RL Results
+
+
+
+We show that ATC matches or outperforms state-of-the-art end-to-end RL on all DMControl & DMLab environments and most Atari environments. In Atari, we also show that initializing the CNN encoder with unsupervised pretraining on random data improves performance.
+
+<br>
+<center>
+<img class='hvr-grow' src="/images/atc/online_atc.png" alt="" style="width:90%;"/>
+</center>
+
+<br>
+
+## Benchmarking UL for RL
+
+We also benchmarked a variety of unsupervised objectives for learning features. For these experiments, we use a set up similar to how unsupervised representations are evaluated in computer vision. We collect a dataset of expert demonstrations, then we learn features from this data, finally we freeze the CNN encoder and train RL on top of the learned features for a downstream task. This is exactly how state-of-the-art unsupervised learning methods in vision (SimCLR, MoCo, BYOL) evaluate the quality of the unsupervised representations. We extensively benchmark ATC features against those learned with the RL objective, contrastive learning (CURL), a variational autoencoder, inverse dynamics, among others and find that ATC is the state-of-the-art unsupervised representation learning algorithm for RL across all three environments.
+
+<br>
+<center>
+<img class='hvr-grow' src="/images/atc/offline_atc.png" alt="" style="width:90%;"/>
+</center>
+
+<br>
+
+## ATC Features for Multi-task Learning
+
+We also show that unsupervised pre-training with ATC results in features that are useful for multi-task learning. In these experiments, we collect a dataset of demonstrations across 4 DMControl tasks, and train a single encoder. We then learn RL policies on top of the frozen encoder features for 8 DMControl tasks. Surpringly, features learned by ATC enable efficient learning for both train and test environments, which were not included during the original encoder learning phase.
+
+<br>
+<center>
+<img class='hvr-grow' src="/images/atc/atc_multi.png" alt="" style="width:90%;"/>
+</center>
+
+<br>
+
+For more information, check out our [paper]({{page.arxiv}}) and [codebase]({{page.code}}).
+<hr>
+<br>
+<center><a  target='_blank' href="{{page.arxiv}}"><u> More details on ArXiv</u></a> </center>
+<br>
+<center>
+<a  target='_blank' href="{{page.arxiv}}">
+<img class='hvr-grow' src="/images/rad/rad_paper_thumbnail.png" alt="" style="width:80%;"/>
+</a>
+</center>
+
+<br>
+<hr>
+<br>
