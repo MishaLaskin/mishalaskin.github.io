@@ -7,7 +7,7 @@ image: /images/rad/rad_thumbnail.png
 categories: research
 affiliation: UC Berkeley, BAIR
 authors: "<b>Michael Laskin*</b>, Kimin Lee*, Adam Stooke, Lerrel Pinto, Pieter Abbeel, Aravind Srinivas"
-venue: "In Submission"
+venue: "NeurIPS (<b style='color:red'>Spotlight Presentation</b>)"
 code: https://github.com/MishaLaskin/rad
 arxiv: https://arxiv.org/abs/2004.14990
 equal: '*'
