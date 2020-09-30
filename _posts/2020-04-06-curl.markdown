@@ -66,7 +66,7 @@ Media	📰
 @article{laskin_srinivas2020curl,
   title={CURL: Contrastive Unsupervised Representations for Reinforcement Learning},
   author={Laskin, Michael and Srinivas, Aravind and Abbeel, Pieter},
-  note={arXiv:2003.06417},
+  note={arXiv:2004.04136},
   journal={Proceedings of the 37th International Conference on Machine 
   Learning, Vienna, Austria, PMLR 119},
   year={2020}
