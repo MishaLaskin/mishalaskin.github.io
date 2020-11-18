@@ -6,7 +6,7 @@ date:   2020-03-06 11:10:11 -0800
 image: /images/cleanup.gif
 categories: research
 affiliation: UC Berkeley, FAIR
-authors: "<b>Michael Laskin*</b>, Scott Emmons*, Ajay Jain*, Thanard Kurutach, Pieter Abbeel, Deepak Pathak"
+authors: "Scott Emmons*, Ajay Jain*, <b>Michael Laskin*</b>, Thanard Kurutach, Pieter Abbeel, Deepak Pathak"
 venue: "NeurIPS"
 code: https://github.com/scottemmons/sgm
 arxiv: http://arxiv.org/abs/2003.06417
@@ -38,16 +38,17 @@ function showTweet() {
 <br> 
 
 <div class="table-like" style="justify-content:space-evenly;max-width:800px;margin:;">
-      <div><span class='author_name'><a href="https://mishalaskin.github.io/" target="_blank">M. Laskin*</a></span>
-      <br>
-      <span class='author_name'>UC Berkeley</span>
-      </div>
+      
       <div><span class='author_name'><a href="http://scottemmons.com/" target="_blank">S. Emmons*</a></span>
       <br>
       <span class='author_name'>UC Berkeley</span>
       </div>
 
       <div><span class='author_name'><a href="https://www.ajayjain.net/" target="_blank">A. Jain*</a></span>
+      <br>
+      <span class='author_name'>UC Berkeley</span>
+      </div>
+      <div><span class='author_name'><a href="https://mishalaskin.github.io/" target="_blank">M. Laskin*</a></span>
       <br>
       <span class='author_name'>UC Berkeley</span>
       </div>
@@ -78,9 +79,9 @@ function showTweet() {
 
 <div style='display:none;font-size:12px' id="bibtex">
 <pre>
-@unpublished{laskin2020sparse,
+@unpublished{EmmonsJainLaskin2020sparse,
   title={Sparse Graphical Memory for Robust Planning},
-  author={Laskin, Michael and Emmons, Scott and Jain, Ajay and Kurutach, 
+  author={Emmons, Scott and Jain, Laskin, Michael, Ajay and Kurutach, 
   Thanard and Abbeel, Pieter and Pathak, Deepak},
   note={arXiv:2003.06417}
 }
