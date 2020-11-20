@@ -1,0 +1,64 @@
+---
+permalink: /appinfo/
+layout: post
+title:  "App Info"
+date:   2020-04-24 11:10:11 -0800
+image: /images/rad/rad_thumbnail.png
+categories: hidden
+affiliation: UC Berkeley, BAIR
+authors: "<b>Michael Laskin*</b>, Kimin Lee*, Adam Stooke, Lerrel Pinto, Pieter Abbeel, Aravind Srinivas"
+venue: "NeurIPS <b style='color:red'>Spotlight</b> (top 3% of submissions)"
+code: https://github.com/MishaLaskin/rad
+arxiv: https://arxiv.org/abs/2004.14990
+equal: '*'
+press: https://venturebeat.com/2020/05/02/uc-berkeley-researchers-open-source-rad-to-improve-any-reinforcement-learning-algorithm/
+twitter: https://twitter.com/MishaLaskin/status/1257001857043529729
+summary: First extensive study of image augmentation in the RL setting. Showed that simple RL algorithms with augmented data achieve SOTA results on many common RL benchmarks.
+---
+<script>
+function myFunction() {
+  var x = document.getElementById("bibtex");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+# Michael (Misha) Laskin
+<br> 
+
+
+
+<br>
+
+<!--<p>
+  Links 👉 <a   target='_blank' href="{{page.code}}"><u>Github Code</u></a>
+        , <a  target='_blank' href="{{page.arxiv}}"><u> ArXiv Paper</u></a>
+         , <a  onclick="myFunction()" href="#"><u> Cite BibTex</u></a>
+<br>
+Media	📰 <a  target='_blank' href="{{page.press}}"><u> VentureBeat Article</u></a>,
+ <a  target="_blank" href="https://twitter.com/MishaLaskin/status/1275595976510758918"><u> Twitter</u></a>, <a  target="_blank" href="https://bair.berkeley.edu/blog/2020/07/19/curl-rad/"><u> BAIR blog </u></a>
+</p>-->
+
+<div style='display:none;font-size:12px' id="bibtex">
+  <pre>
+@unpublished{laskin_lee2020rad,
+  title={Reinforcement Learming with Augmented Data},
+  author={Laskin, Michael and Lee, Kimin and Stooke,
+  Adam and Pinto, Lerrel and Abbeel, Pieter and Srinivas, Aravind},
+  note={arXiv:2004.14990}
+}
+</pre>
+</div>
+
+
+<br>
+## Application Materials
+
+Placeholder
+
+## Representative Papers
+
+Placeholder
