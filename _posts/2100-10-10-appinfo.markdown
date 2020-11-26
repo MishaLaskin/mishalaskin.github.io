@@ -17,7 +17,8 @@ summary: First extensive study of image augmentation in the RL setting. Showed t
 ---
 ## Michael <i> (Misha)</i> Laskin
 
-<br> 
+These are materials in support of Michael Laskin's faculty applications. 
+
 ### Application Materials
 
 [Teaching Statement](../assets/appinfo/Teaching_Statement.pdf)
