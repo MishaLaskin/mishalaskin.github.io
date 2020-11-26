@@ -15,50 +15,21 @@ press: https://venturebeat.com/2020/05/02/uc-berkeley-researchers-open-source-ra
 twitter: https://twitter.com/MishaLaskin/status/1257001857043529729
 summary: First extensive study of image augmentation in the RL setting. Showed that simple RL algorithms with augmented data achieve SOTA results on many common RL benchmarks.
 ---
-<script>
-function myFunction() {
-  var x = document.getElementById("bibtex");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+## Michael <i> (Misha)</i> Laskin
 
-</script>
-# Michael (Misha) Laskin
 <br> 
+### Application Materials
 
+[Teaching Statement]({{ site.url }}/assets/appinfo/Teaching_Statement.pdf)
 
+[Research Statement]({{ site.url }}/assets/appinfo/Research_Statement.pdf)
 
-<br>
+[Diversity Statement]({{ site.url }}/assets/appinfo/Diversity_Statement.pdf)
 
-<!--<p>
-  Links 👉 <a   target='_blank' href="{{page.code}}"><u>Github Code</u></a>
-        , <a  target='_blank' href="{{page.arxiv}}"><u> ArXiv Paper</u></a>
-         , <a  onclick="myFunction()" href="#"><u> Cite BibTex</u></a>
-<br>
-Media	📰 <a  target='_blank' href="{{page.press}}"><u> VentureBeat Article</u></a>,
- <a  target="_blank" href="https://twitter.com/MishaLaskin/status/1275595976510758918"><u> Twitter</u></a>, <a  target="_blank" href="https://bair.berkeley.edu/blog/2020/07/19/curl-rad/"><u> BAIR blog </u></a>
-</p>-->
+### Representative Papers
 
-<div style='display:none;font-size:12px' id="bibtex">
-  <pre>
-@unpublished{laskin_lee2020rad,
-  title={Reinforcement Learming with Augmented Data},
-  author={Laskin, Michael and Lee, Kimin and Stooke,
-  Adam and Pinto, Lerrel and Abbeel, Pieter and Srinivas, Aravind},
-  note={arXiv:2004.14990}
-}
-</pre>
-</div>
+[Contrastive Unsupervised Representations for Reinforcement Learning]({{ site.url }}/assets/appinfo/curl_icml.pdf), ICML 2020
 
+[Reinforcement Learning with Augmented Data]({{ site.url }}/assets/appinfo/rad_neurips_spotlight.pdf) Neurips 2020, Spotlight (top 2.9%)
 
-<br>
-## Application Materials
-
-Placeholder
-
-## Representative Papers
-
-Placeholder
+[A Framework for Efficient Robotic Manipulation]({{ site.url }}/assets/appinfo/ferm_icra_insubmission.pdf), Submitted to ICRA 2021
