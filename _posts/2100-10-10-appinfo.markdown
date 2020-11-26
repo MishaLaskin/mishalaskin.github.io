@@ -20,16 +20,16 @@ summary: First extensive study of image augmentation in the RL setting. Showed t
 <br> 
 ### Application Materials
 
-[Teaching Statement]({{ site.url }}/assets/appinfo/Teaching_Statement.pdf)
+[Teaching Statement](../assets/appinfo/Teaching_Statement.pdf)
 
-[Research Statement]({{ site.url }}/assets/appinfo/Research_Statement.pdf)
+[Research Statement](../assets/appinfo/Research_Statement.pdf)
 
-[Diversity Statement]({{ site.url }}/assets/appinfo/Diversity_Statement.pdf)
+[Diversity Statement](../assets/appinfo/Diversity_Statement.pdf)
 
 ### Representative Papers
 
-[Contrastive Unsupervised Representations for Reinforcement Learning]({{ site.url }}/assets/appinfo/curl_icml.pdf), ICML 2020
+[Contrastive Unsupervised Representations for Reinforcement Learning](../assets/appinfo/curl_icml.pdf), ICML 2020
 
-[Reinforcement Learning with Augmented Data]({{ site.url }}/assets/appinfo/rad_neurips_spotlight.pdf) Neurips 2020, Spotlight (top 2.9%)
+[Reinforcement Learning with Augmented Data](../assets/appinfo/rad_neurips_spotlight.pdf) Neurips 2020, Spotlight (top 2.9%)
 
-[A Framework for Efficient Robotic Manipulation]({{ site.url }}/assets/appinfo/ferm_icra_insubmission.pdf), Submitted to ICRA 2021
+[A Framework for Efficient Robotic Manipulation](../assets/appinfo/ferm_icra_insubmission.pdf), Submitted to ICRA 2021
