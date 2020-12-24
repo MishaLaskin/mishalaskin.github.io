@@ -1,0 +1,15 @@
+---
+permalink: /sunrise/
+layout: post
+title:  "A Framework for Efficient Robotic Manipulation"
+date:   2020-11-23 11:10:11 -0800
+image: /images/ferm/ferm.gif
+categories: research
+affiliation: UC Berkeley, BAIR & NYU
+authors: "Albert Zhan*, Philip Zhao*, Lerrel Pinto, Pieter Abbeel, <b>Michael Laskin</b>"
+venue: "In Submission"
+equal: '*'
+summary: A Framework for Efficient Robotic Manipulation (FERM) enables real robots to solve sparse-reward tasks from pixels in minutes.
+external_url: https://sites.google.com/view/efficient-robotic-manipulation
+---
+<meta http-equiv="refresh" content="0; URL='https://sites.google.com/view/efficient-robotic-manipulation'" />
