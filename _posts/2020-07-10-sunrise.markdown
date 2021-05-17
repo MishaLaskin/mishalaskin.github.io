@@ -2,12 +2,12 @@
 permalink: /sunrise/
 layout: post
 title:  "A Simple Unified Framework for Ensemble Learning in Deep Reinforcement Learning"
-date:   2020-07-10 11:10:11 -0800
+date:   2021-04-10 11:10:11 -0800
 image: /images/sunrise/sunrise.png
 categories: research
 affiliation: UC Berkeley, BAIR
 authors: "Kimin Lee, <b>Michael Laskin</b>, Aravind Srinivas, Pieter Abbeel"
-venue: "In Submission"
+venue: "ICML"
 code: https://github.com/pokaxpoka/sunrise
 arxiv: https://arxiv.org/abs/2007.04938
 equal: '*'

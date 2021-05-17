@@ -2,12 +2,12 @@
 permalink: /atc/
 layout: post
 title:  "Decoupling Representation Learning from Reinforcement Learning"
-date:   2020-09-12 11:10:11 -0800
+date:   2021-05-01 11:10:11 -0800
 image: /images/atc/atc_thumbnail.png
 categories: research
 affiliation: UC Berkeley, BAIR
 authors: "Adam Stooke, Kimin Lee, Pieter Abbeel, <b>Michael Laskin</b>"
-venue: "In Submission"
+venue: "ICML"
 code: https://github.com/astooke/rlpyt/tree/master/rlpyt/ul
 arxiv: https://arxiv.org/abs/2009.08319
 equal: '*'

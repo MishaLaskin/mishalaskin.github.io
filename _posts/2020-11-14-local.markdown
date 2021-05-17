@@ -2,12 +2,12 @@
 permalink: /local/
 layout: post
 title:  "Parallel Training of Deep Networks with Local Updates"
-date:   2020-09-12 11:10:11 -0800
+date:   2021-05-02 11:10:11 -0800
 image: /images/local/local.gif
 categories: research
 affiliation: UC Berkeley, Graphcore, Google Brain
 authors: "<b>Michael Laskin</b>*, Luke Metz*, Seth Nabarrao, Mark Saroufim, Badreddine Noune, Carlo Luschi, Jascha Sohl-Dickstein, Pieter Abbeel"
-venue: "In Submission"
+venue: "Pre-Print"
 arxiv: https://arxiv.org/abs/2012.03837
 equal: '*'
 twitter: https://twitter.com/MishaLaskin/status/1336401401350598659
