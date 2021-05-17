@@ -7,7 +7,7 @@ image: /images/local/local.gif
 categories: research
 affiliation: UC Berkeley, Graphcore, Google Brain
 authors: "<b>Michael Laskin</b>*, Luke Metz*, Seth Nabarrao, Mark Saroufim, Badreddine Noune, Carlo Luschi, Jascha Sohl-Dickstein, Pieter Abbeel"
-venue: "Pre-Print"
+venue: "Pre-print"
 arxiv: https://arxiv.org/abs/2012.03837
 equal: '*'
 twitter: https://twitter.com/MishaLaskin/status/1336401401350598659

@@ -7,7 +7,7 @@ image: /images/ferm/ferm.gif
 categories: research
 affiliation: UC Berkeley, BAIR & NYU
 authors: "Albert Zhan*, Philip Zhao*, Lerrel Pinto, Pieter Abbeel, <b>Michael Laskin</b>"
-venue: "Pre-Print"
+venue: "Pre-print"
 equal: '*'
 arxiv: https://arxiv.org/abs/2012.07975
 twitter: https://twitter.com/MishaLaskin/status/1351925205258612737
