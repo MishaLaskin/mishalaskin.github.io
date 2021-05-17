@@ -9,6 +9,10 @@ affiliation: UC Berkeley, BAIR & NYU
 authors: "Albert Zhan*, Philip Zhao*, Lerrel Pinto, Pieter Abbeel, <b>Michael Laskin</b>"
 venue: "Pre-Print"
 equal: '*'
+arxiv: https://arxiv.org/abs/2012.07975
+twitter: https://twitter.com/MishaLaskin/status/1351925205258612737
+press: https://venturebeat.com/2020/12/16/new-framework-can-train-a-robotic-arm-on-6-grasping-tasks-in-less-than-an-hour/
+code: https://sites.google.com/view/efficient-robotic-manipulation
 summary: A Framework for Efficient Robotic Manipulation (FERM) enables real robots to solve sparse-reward tasks from pixels in minutes.
 external_url: https://sites.google.com/view/efficient-robotic-manipulation
 ---
